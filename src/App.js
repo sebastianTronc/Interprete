@@ -1,7 +1,10 @@
-import peg from "pegjs"
-import lenguaje from "./lenguaje.pegjs"
-import lenguaje2 from "./lenguaje.txt"
+
+import React, {Fragment} from 'react';
 import lenguajeN from "./lenguaje"
+import Navegacion from "./componentes/Navegacion"
+import Footer from "./componentes/Footer"
+import Cuerpo from "./componentes/Cuerpo"
+
 
 function App() {
  /* var leng=`
@@ -44,11 +47,22 @@ Integer "integer"
     }
   }
 
-  return (
+  return (   
+    <Fragment>
+
+      <Navegacion/>
+      <Cuerpo/>
+      <Footer/>
+      
+          
+    </Fragment>
+
+    /*
     <div>
       <input type="textarea" id="it"/>
       <button onClick={handleClick}>Jorge cachón.</button>
     </div>
+    */
   );
 }
 
