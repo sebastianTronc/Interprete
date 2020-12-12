@@ -11,7 +11,7 @@ const Footer = () => {
                 <p>Compiladores</p>
                 <p>Universidad del magdalena</p>
                 <p>
-                    © 2020 Interprete(PEG.js), Inc.
+                    <span>© 2020 Interprete(PEG.js), Inc.</span>
                     Todos los derechos reservados
                 </p>
             </div>

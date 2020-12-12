@@ -3,16 +3,13 @@ import Navegacion from "./componentes/Navegacion"
 import Footer from "./componentes/Footer"
 import Cuerpo from "./componentes/Cuerpo"
 
-
 function App() {
  
   return (   
     <Fragment>
-
-      <Navegacion/>
-      <Cuerpo/>
-      <Footer/>
-                
+        <Navegacion/>
+        <Cuerpo/>
+        <Footer/>  
     </Fragment>
   );
 }
