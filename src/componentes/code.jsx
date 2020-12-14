@@ -47,7 +47,7 @@ const Code = () => {
             document.getElementById("info").classList.add("correcto")
             setEstadoRevision("El analizis no lanzo ningun error en tu escritura")
             MySwal.fire({
-                title: "Finalizado",
+                title: "Exito",
                 text: "Se ha escaneado el codigo y no se han encontrado errores de sintaxis.",
                 icon: "success"
             });
