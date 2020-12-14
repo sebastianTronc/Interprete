@@ -6,13 +6,13 @@ const Footer = () => {
         <div class="footer">
             <div class="footer__left">
                 <h2>Taller de Interprete (PEG.JS)</h2>
-                <p>Objetivo: Implementar una libreria para validar la gramativa de un lenguaje de programacion escrito con JavaScript.</p>
-                <p>Misión: Construir un programa escrito en JavaScript que valide la escritura principal de un lenguaje de programacion.</p>
-                <p>Compiladores</p>
-                <p>Universidad del magdalena</p>
+                <p>Objetivo: Implementar una librería para validar la gramática de un lenguaje de programación escrito con JavaScript.</p>
+                <p>Misión: Construir un programa escrito en JavaScript que valide la escritura principal de un lenguaje de programación.</p>
+                <p>Compiladores.</p>
+                <p>Universidad del Magdalena.</p>
                 <p>
-                    <span>© 2020 Interprete(PEG.js), Inc.</span>
-                    Todos los derechos reservados
+                    <span>© 2020 Interprete(PEG.js), Inc. </span>
+                     ® Todos los derechos reservados.
                 </p>
             </div>
             <div class="footer__right">

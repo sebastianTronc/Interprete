@@ -2,6 +2,11 @@ import React, { useEffect, useState } from 'react';
 import leng from "../library/lenguaje"
 import { instanciaEditor } from '../library/funciones';
 
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
+
 
 const Code = () => {
 
@@ -27,7 +32,7 @@ const Code = () => {
     },[])
 
     useEffect(()=>{
-        aux.doc.setValue("Valida[a::=3](\n   init a :: b;\n)Si_no Valida[a ::= 7](\n    Mientras_que[a < 4](\n       init b :: 8;\n    )\n)Si_no(\n    init c :: 10;\n)")
+        aux.doc.setValue("init myfunc; \nmyFunc :: Metodo [ theObject ] ( \n    Repetir [ i :: 0: i < cars.length: i++ ] ( \n       Mientras_que [ i < 5 ]( \n          Valida [ a ::= 3 ]( \n              init a :: i; \n          ) Si_no ( \n              init b :: i; \n          )\n       )\n    )\n)")
     },[])
     
     const  handlenClick = ()=>{
@@ -40,6 +45,11 @@ const Code = () => {
             document.getElementById("info").classList.remove("incorrecto")
             document.getElementById("info").classList.add("correcto")
             setEstadoRevision("El analizis no lanzo ningun error en tu escritura")
+            MySwal.fire({
+                title: "Finalizado",
+                text: "Proceso terminado con exito.",
+                icon: "success"
+            });
             // setTimeout(()=>{
             //     document.getElementById("info").classList.remove("correcto")
             // },10000);           
@@ -50,6 +60,11 @@ const Code = () => {
             // contruirSmsError(error);
             document.getElementById("info").classList.remove("correcto")
             document.getElementById("info").classList.add("incorrecto")
+            MySwal.fire({
+                title: "Finalizado",
+                text: "Error.",
+                icon: "error"
+            });
         }
     }
 
