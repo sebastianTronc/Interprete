@@ -2,20 +2,6 @@ import React, { useEffect, useState } from 'react';
 import leng from "../library/lenguaje"
 import { instanciaEditor } from '../library/funciones';
 
-//Importaciones de la libreria de codde mirror
-
-//core de la libreria
-// import codeMirror from '../library/codemirror/lib/codemirror';
-// import '../library/codemirror/lib/codemirror.css';
-
-//modo
-// import javaScript from '../library/codemirror/mode/javascript/javascript';
-
-//tema
-// import '../library/codemirror/theme/moxer.css';
-
-//plugins
-// import close from '../library/codemirror/addon/edit/closebrackets';
 
 const Code = () => {
 
@@ -33,15 +19,15 @@ const Code = () => {
         return string;
     }
 
-    var nojoda = null;
+    var aux = null;
     useEffect(()=>{
         var x = instanciaEditor();
         setEditor(x);
-        nojoda = x;
+        aux = x;
     },[])
 
     useEffect(()=>{
-        nojoda.doc.setValue("Valida[a::=3](\n   init a :: b;\n)Si_no Valida[a ::= 7](\n    Mientras_que[a < 4](\n       init b :: 8;\n    )\n)Si_no(\n    init c :: 10;\n)")
+        aux.doc.setValue("Valida[a::=3](\n   init a :: b;\n)Si_no Valida[a ::= 7](\n    Mientras_que[a < 4](\n       init b :: 8;\n    )\n)Si_no(\n    init c :: 10;\n)")
     },[])
     
     const  handlenClick = ()=>{
