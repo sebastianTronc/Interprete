@@ -6,14 +6,14 @@ const Cuerpo = () => {
 
     return (
 
-        <div class="contenedor">    
-            <h2 class="contenedor__titulo">Bienvenido a tu Interprete</h2>
+        <div className="contenedor">    
+            <h2 className="contenedor__titulo">Bienvenido a tu Interprete de <span className="nombre">JALS-Script</span> </h2>
             
-            <div class="contenedor__body">
-                <div class="contenedor__body__left">
+            <div className="contenedor__body">
+                <div className="contenedor__body__left">
                     <Guia/>
                 </div>
-                <div class="contenedor__body__right">
+                <div className="contenedor__body__right">
                     <Code/>
                 </div>
             </div>

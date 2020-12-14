@@ -24,6 +24,7 @@ const Code = () => {
         return string;
     }
 
+
     var aux = null;
     useEffect(()=>{
         var x = instanciaEditor();
@@ -47,7 +48,7 @@ const Code = () => {
             setEstadoRevision("El analizis no lanzo ningun error en tu escritura")
             MySwal.fire({
                 title: "Finalizado",
-                text: "Proceso terminado con exito.",
+                text: "Se ha escaneado el codigo y no se han encontrado errores de sintaxis.",
                 icon: "success"
             });
             // setTimeout(()=>{
@@ -61,8 +62,8 @@ const Code = () => {
             document.getElementById("info").classList.remove("correcto")
             document.getElementById("info").classList.add("incorrecto")
             MySwal.fire({
-                title: "Finalizado",
-                text: "Error.",
+                title: error.name,
+                html: <div><p>Se encontro un Error sintactico aproximandamente en la linea {error.location.start.line}</p></div>,
                 icon: "error"
             });
         }

@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 .posc{
     text-align: left;
 }
@@ -20,7 +21,15 @@ body{
 span{
     color: #228BA5;
 }
-
+.nombre{
+    color: #228BA5;
+    font-size: 1.8rem;
+}
+.iniciales{
+    color: #228BA5;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
 h1 .span2{
     font-size: 3rem;
     color:#090A0F;
